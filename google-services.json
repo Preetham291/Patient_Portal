@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "798980569168",
+    "project_id": "hackathon-442d5",
+    "storage_bucket": "hackathon-442d5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798980569168:android:c419df74611ead1c9ab955",
+        "android_client_info": {
+          "package_name": "com.sidhu.hackathon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcb7TL1wCbYy-Dmm55OD4jkmufqYjZkqg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

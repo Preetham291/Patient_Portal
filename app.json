@@ -1,0 +1,96 @@
+{
+  "expo": {
+    "name": "patient portal",
+    "slug": "patient-portal-ft",
+    "version": "1.0.0",
+    "scheme": "patient-portal",
+    "orientation": "portrait",
+    "icon": "./assets/splashlight.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splashlight.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff",
+      "dark": {
+        "image": "./assets/splashdark.png",
+        "backgroundColor": "#000000"
+      }
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sidhu.hackathon",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSLocationWhenInUseUsageDescription": "This app uses your location to provide local weather and air quality updates.",
+        "NSMotionUsageDescription": "This app uses movement data to track your daily step count and monitor your recovery progress.",
+        "LSApplicationQueriesSchemes": [
+          "comgooglemaps",
+          "citymapper",
+          "uber",
+          "lyft",
+          "transit",
+          "waze",
+          "yandexnavi",
+          "moovit",
+          "geo",
+          "maps"
+        ]
+      }
+    },
+    "android": {
+      "package": "com.sidhu.hackathon",
+      "googleServicesFile": "./google-services.json",
+      "permissions": [
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "ACCESS_WIFI_STATE",
+        "READ_EXTERNAL_STORAGE",
+        "WAKE_LOCK",
+        "VIBRATE",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "android.permission.ACTIVITY_RECOGNITION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/splashlight.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/splashlight.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-document-picker",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/splashlight.png",
+          "color": "#ffffff"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allowing location access helps us suggest health tips based on your local weather."
+        }
+      ],
+      "expo-build-properties"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "be79a2f5-62f5-4537-ba18-18d586a4df4e"
+      }
+    },
+    "owner": "sidhu-ft"
+  }
+}
