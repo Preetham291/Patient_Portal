@@ -63,7 +63,7 @@ const DoctorAIChat = () => {
   };
 
   const GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent";
-  const API_KEY = "AIzaSyCkEGL80sBnQTDXCCQvN0K9M2GOLlwhi9I"; 
+  const API_KEY = process.env.APY_FY; 
 
   useEffect(() => {
     const init = async () => {
